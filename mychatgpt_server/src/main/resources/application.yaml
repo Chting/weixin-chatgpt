@@ -1,0 +1,30 @@
+server:
+  port: 12380
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  datasource:
+    username: chatvx
+    password: Kuaibao678!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/chatvx?useUnicode=true&serverTimezone=Asia/Shanghai&useSSL=false
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.ttpfx.entity
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+gpt:
+#  model: gpt-3.5-turbo
+   model:
+#    key: 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
+     key: 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
+  # proxy:
+  #   host: 127.0.0.1
+  #   port: 7890
